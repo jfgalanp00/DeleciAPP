@@ -146,6 +146,7 @@ public class Favoritos extends AppCompatActivity {
         Query query = usuariosRef.whereEqualTo("usuario", nombreUsuario).limit(1);
 
         Task<QuerySnapshot> task = query.get();
+
         while (!task.isComplete()) {
             // Espera a que se complete la tarea
         }

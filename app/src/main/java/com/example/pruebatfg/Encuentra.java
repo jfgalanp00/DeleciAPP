@@ -36,7 +36,7 @@ public class Encuentra extends AppCompatActivity {
         Intent intent = getIntent();
         String tipoComida = intent.getStringExtra("tipocomida");
         String precio = intent.getStringExtra("precio");
-        String usuario = intent.getStringExtra("usuario");//*******************************************
+        String usuario = intent.getStringExtra("usuario");
 
         Query query = myFirestore.collection("restaurante")
                 .whereEqualTo("tipocomida", tipoComida)
@@ -44,7 +44,7 @@ public class Encuentra extends AppCompatActivity {
 
         FirestoreRecyclerOptions<Restaurante> firebaseOptions = new FirestoreRecyclerOptions.Builder<Restaurante>().setQuery(query, Restaurante.class).build();
 
-        myAdapter = new RestauranteAdapter(firebaseOptions, usuario);//**************************************
+        myAdapter = new RestauranteAdapter(firebaseOptions, usuario);
         myAdapter.notifyDataSetChanged();
         myRecycler.setAdapter(myAdapter);
 

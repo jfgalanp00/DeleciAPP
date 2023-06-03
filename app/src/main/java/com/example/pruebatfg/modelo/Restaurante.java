@@ -1,7 +1,5 @@
 package com.example.pruebatfg.modelo;
 
-import android.os.Parcel;
-
 public class Restaurante {
     String direccion;
     String nombre;
@@ -19,14 +17,6 @@ public class Restaurante {
         this.poblacion = poblacion;
         this.precio = precio;
         this.tipocomida = tipocomida;
-    }
-
-    protected Restaurante(Parcel in) {
-        direccion = in.readString();
-        nombre = in.readString();
-        poblacion = in.readString();
-        precio = in.readString();
-        tipocomida = in.readString();
     }
 
     public String getDireccion() {

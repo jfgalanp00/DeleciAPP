@@ -58,9 +58,9 @@ public class RestauranteAdapter extends FirestoreRecyclerAdapter<Restaurante, Re
 
         // Actualizar visualmente el estado de la estrella según el estado de favorito del restaurante
         // Obtener el ID del usuario actual ingresado por el usuario, hay que sacar la lista de todos los documentos de la base de datos.
-        //String usuarioId = "pm6glCqPEBSgsDLsjgH6"; // Reemplaza esto con el ID del usuario actual ingresado por el usuario
+        // String usuarioId = "pm6glCqPEBSgsDLsjgH6"; // Reemplaza esto con el ID del usuario actual ingresado por el usuario
 
-        //aqui le estamos pasando un string porque no es posible pasarle una lista, como hacemos para que vaya iterando la lista y sea un string en vez de lista
+        // aqui le estamos pasando un string porque no es posible pasarle una lista, como hacemos para que vaya iterando la lista y sea un string en vez de lista
         // Obtener la referencia del documento del usuario actual
 
         DocumentReference usuarioRef = FirebaseFirestore.getInstance().collection("usuario").document(buscarUsuarioPorNombre(nombreUsuario));
@@ -91,7 +91,6 @@ public class RestauranteAdapter extends FirestoreRecyclerAdapter<Restaurante, Re
         holder.imgButonFavorito.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //****************************************************************************************
                 // Crear animación de rotación
                 ObjectAnimator rotationAnimator = ObjectAnimator.ofFloat(v, "rotation", 0f, 360f);
                 rotationAnimator.setDuration(1000);
@@ -140,7 +139,6 @@ public class RestauranteAdapter extends FirestoreRecyclerAdapter<Restaurante, Re
                     }
                 });
 
-                //****************************************************************************************
                 // Cambiar el estado de favorito del restaurante
                 boolean isFavorito = !model.isFavorito();
                 model.setFavorito(isFavorito);
@@ -188,7 +186,6 @@ public class RestauranteAdapter extends FirestoreRecyclerAdapter<Restaurante, Re
         });
     }
 
-    //***********************************
     //aqui lo que hacemos es buscar por nombre de usuario y recoger el documento del usuario y podemos acceder a cada usuario
     private String buscarUsuarioPorNombre(String nombreUsuario) {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -214,8 +211,6 @@ public class RestauranteAdapter extends FirestoreRecyclerAdapter<Restaurante, Re
 
         return null; // No se encontró el usuario
     }
-    //***********************************
-
 
     @NonNull
     @Override

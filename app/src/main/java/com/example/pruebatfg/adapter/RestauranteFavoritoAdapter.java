@@ -1,7 +1,5 @@
 package com.example.pruebatfg.adapter;
 
-import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -130,4 +128,3 @@ public class RestauranteFavoritoAdapter extends RecyclerView.Adapter<Restaurante
         return null; // No se encontró el usuario
     }
 }
-

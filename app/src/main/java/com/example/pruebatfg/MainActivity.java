@@ -88,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
                     Query query = usuariosRef.whereEqualTo("usuario", nombreUsuario)
                             .whereEqualTo("clave", clave);
 
+                    //manejador de tareas asincronas
                     query.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                         @Override
                         public void onComplete(@NonNull Task<QuerySnapshot> task) {
@@ -97,8 +98,6 @@ public class MainActivity extends AppCompatActivity {
                                     DocumentSnapshot document = querySnapshot.getDocuments().get(0);
                                     String nombre = document.getString("nombre");
 
-
-                                    // Continuar con la lógica despues de la verificacion
                                     //pasar documentos de la coleccion usuario
                                     Intent intent = new Intent(MainActivity.this, Busqueda.class);
                                     intent.putExtra("nombre", nombre);

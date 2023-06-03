@@ -49,8 +49,8 @@ public class ModificarUsuario extends AppCompatActivity {
         Intent intent = getIntent();
         String nombre = intent.getStringExtra("nombre");
         String usuario = intent.getStringExtra("usuario");
-        edNombre.setText( nombre );
-        edUsuario.setText( usuario );
+        edNombre.setText(nombre);
+        edUsuario.setText(usuario);
 
         btnBorrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -127,7 +127,7 @@ public class ModificarUsuario extends AppCompatActivity {
 
                                 String nombre = edNombre.getText().toString();
                                 String usuario = edUsuario.getText().toString();
-                                if(!nombre.isEmpty() && !usuario.isEmpty()){
+                                if (!nombre.isEmpty() && !usuario.isEmpty()) {
                                     userRef.update(
                                             "nombre", nombre,
                                             "usuario", usuario
@@ -142,7 +142,7 @@ public class ModificarUsuario extends AppCompatActivity {
                                             Toast.makeText(ModificarUsuario.this, "Error al almacenar los cambios", Toast.LENGTH_SHORT).show();
                                         }
                                     });
-                                }else{
+                                } else {
                                     Toast.makeText(ModificarUsuario.this, "El campo nombre o nombre usuario estan VACIOS", Toast.LENGTH_SHORT).show();
                                 }
 
