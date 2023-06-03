@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1041498742170",
+    "project_id": "restauraidb",
+    "storage_bucket": "restauraidb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1041498742170:android:707069f4561b645e2e6e23",
+        "android_client_info": {
+          "package_name": "com.example.pruebatfg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1041498742170-ub4mtdk388it3kcae8vt9a7i269l01jg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPR6bqFv-1gNqJlpQ5MBdZflFVYRWigL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1041498742170-ub4mtdk388it3kcae8vt9a7i269l01jg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
