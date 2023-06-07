@@ -91,17 +91,69 @@ public class Registra extends AppCompatActivity {
         });
     }
 
+    //Debe contener Mayusculas, minusculas, numeros, caracteres especiales
     private void comprobarClave(String clave, String repiteClave, String nombre, String nombreUsuario) {
-        //aqui podemos añadir que la clave tiene que tener mas de x digitos y tiene que tener mayus minus numeros y caracteres.
-        if (clave.equals(repiteClave)){
-            //sigue
-            Toast.makeText(this, "Las contraseñas son correctas", Toast.LENGTH_SHORT).show();
-            cargaBaseDatos(nombre, nombreUsuario, clave);
-        }else{
-            //no sigue
-            Toast.makeText(this, "Las contraseñas no son iguales", Toast.LENGTH_SHORT).show();
+        if (!clave.isEmpty()) {
+            boolean claveValida = validarClave(clave);
+
+            if (claveValida) {
+                // La clave es válida continua
+                Toast.makeText(this, "Clave correcta", Toast.LENGTH_SHORT).show();
+                if (clave.equals(repiteClave)) {
+                    // Las contraseñas son iguales continua
+                    Toast.makeText(this, "Las contraseñas son correctas", Toast.LENGTH_SHORT).show();
+                    cargaBaseDatos(nombre, nombreUsuario, clave);
+                } else {
+                    // Las contraseñas no son iguales muestra un mensaje
+                    Toast.makeText(this, "Las contraseñas no son iguales", Toast.LENGTH_SHORT).show();
+                }
+            } else {
+                // La clave no cumple con los requisitos muestra un mensaje
+                Toast.makeText(this, "La clave no cumple con los requisitos", Toast.LENGTH_SHORT).show();
+            }
+        } else {
+            // La clave no tiene longitud adecuada, muestra un mensaje
+            Toast.makeText(this, "La clave no cumple con los criterios", Toast.LENGTH_SHORT).show();
         }
     }
+
+    private boolean validarClave(String clave) {
+        int longitudMinima = 2;
+        int longitudMaxima = 16;
+        boolean tieneMayuscula = false;
+        boolean tieneMinuscula = false;
+        boolean tieneNumero = false;
+        boolean tieneCaracterEspecial = false;
+
+        if (clave.length() >= longitudMinima && clave.length() <= longitudMaxima) {
+            for (char caracter : clave.toCharArray()) {
+                if (Character.isUpperCase(caracter)) {
+                    tieneMayuscula = true;
+                } else if (Character.isLowerCase(caracter)) {
+                    tieneMinuscula = true;
+                } else if (Character.isDigit(caracter)) {
+                    tieneNumero = true;
+                } else {
+                    // caracteres especiales solo los que no son letras ni numeros.
+                    tieneCaracterEspecial = true;
+                }
+            }
+
+            if (tieneMayuscula && tieneMinuscula && tieneNumero && tieneCaracterEspecial) {
+                // La clave cumple con todos los requisitos
+                return true;
+            } else {
+                // La clave no cumple con todos los requisitos
+                return false;
+            }
+        } else {
+            // La clave no tiene la longitud
+            return false;
+        }
+    }
+
+    //***************
+
 
     private void cargaBaseDatos(String nombre, String nombreUsuario, String clave) {
         Map<String, Object> map = new HashMap<>();
