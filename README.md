@@ -18,10 +18,10 @@ A continuación, se muestran algunas capturas de pantalla de la aplicación:
 *Busqueda.*
 
 ![Captura de pantalla 4](4.png)
-*Modificar Usuario.*
+*Mostrar lista restaurantes.*
 
 ![Captura de pantalla 5](6.png)
-*Registro.*
+*Modificar Usuario.*
 
 ## Características clave
 
