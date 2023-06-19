@@ -27,7 +27,7 @@ Para poder desarrollar esta app he utilizado las siguientes tecnologías:
 
 - Android Studio
 
-  ![Logo de Android](https://www.freepnglogos.com/uploads/android-logo-png/android-logo-transparent-png-svg-vector-2.png){:width="200px"}
+  <img src="https://www.freepnglogos.com/uploads/android-logo-png/android-logo-transparent-png-svg-vector-2.png" alt="Logo de Android" width="200px">
 
 - Firebase
 
