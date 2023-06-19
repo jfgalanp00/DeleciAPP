@@ -1,6 +1,6 @@
 <h1 align="center">🍔 DeliciApp 🍔</h1>
 
-<h1 align="center">![DeliciApp Logo](logo.png)</h1>
+![DeliciApp Logo](logo.png)
 
 ¡Bienvenido a DeliciApp! Esta es una aplicación de recomendación de restaurantes, diseñada para facilitar el proceso de buscar esos restaurantes más ocultos. Con DeliciApp, podrás explorar ubicaciones y obtener más detalles sobre los seleccionados.
 
@@ -12,6 +12,9 @@ A continuación, se muestran algunas capturas de pantalla de la aplicación:
 *Inicio de la app.*
 
 ![Captura de pantalla 2](2.png)
+*Registro.*
+
+![Captura de pantalla 2](3.png)
 *Registro.*
 
 ## Características clave
