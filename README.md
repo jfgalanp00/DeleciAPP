@@ -17,10 +17,10 @@ A continuación, se muestran algunas capturas de pantalla de la aplicación:
 ![Captura de pantalla 3](33.png)
 *Busqueda.*
 
-![Captura de pantalla 4](33.png)
+![Captura de pantalla 4](4.png)
 *Modificar Usuario.*
 
-![Captura de pantalla 5](33.png)
+![Captura de pantalla 5](6.png)
 *Registro.*
 
 ## Características clave
