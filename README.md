@@ -15,6 +15,12 @@ A continuación, se muestran algunas capturas de pantalla de la aplicación:
 *Registro.*
 
 ![Captura de pantalla 2](33.png)
+*Busqueda.*
+
+![Captura de pantalla 2](33.png)
+*Modificar Usuario.*
+
+![Captura de pantalla 2](33.png)
 *Registro.*
 
 ## Características clave
