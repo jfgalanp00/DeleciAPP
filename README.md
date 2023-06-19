@@ -1,6 +1,4 @@
-<p align="center">
-  <h1>🍔 DeliciApp 🍔</h1>
-</p>
+# 🍔 DeliciApp 🍔
 
 ![DeliciApp Logo](logo.png)
 
