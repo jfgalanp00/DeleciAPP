@@ -14,7 +14,7 @@ A continuación, se muestran algunas capturas de pantalla de la aplicación:
 ![Captura de pantalla 2](2.png)
 *Registro.*
 
-![Captura de pantalla 2](3.png)
+![Captura de pantalla 2](33.png)
 *Registro.*
 
 ## Características clave
