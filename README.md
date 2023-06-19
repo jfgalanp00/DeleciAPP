@@ -1,4 +1,4 @@
-# 🍔 DeliciApp 🍔
+#                               🍔 DeliciApp 🍔
 
 ![DeliciApp Logo](logo.png)
 
