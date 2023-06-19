@@ -31,5 +31,4 @@ Para poder desarrollar esta app he utilizado las siguientes tecnologías:
 
 - Firebase
 
-  ![Logo de Firebase](https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png)
-
+  <img src="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png" alt="Logo de Firebase" width="100px">
