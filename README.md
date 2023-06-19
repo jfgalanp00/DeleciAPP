@@ -8,10 +8,10 @@
 
 A continuación, se muestran algunas capturas de pantalla de la aplicación:
 
-![Captura de pantalla 1](screenshot1.png)
+![Captura de pantalla 1](1.png)
 *Inicio de la app.*
 
-![Captura de pantalla 2](screenshot2.png)
+![Captura de pantalla 2](2.png)
 *Registro.*
 
 ## Características clave
