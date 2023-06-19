@@ -27,7 +27,7 @@ Para poder desarrollar esta app he utilizado las siguientes tecnologías:
 
 - Android Studio
 
-  ![Logo de Android]([https://1000marcas.net/wp-content/uploads/2020/01/Logo-Android.png](https://logos-world.net/wp-content/uploads/2021/08/Android-Logo.png)
+  ![Logo de Android]([https://1000marcas.net/wp-content/uploads/2020/01/Logo-Android.png](https://logos-world.net/wp-content/uploads/2021/08/Android-Logo.png))
 
 - Firebase
 
